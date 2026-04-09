@@ -95,3 +95,26 @@ li:hover {
   from, to { border-color: transparent }
   50% { border-color: orange; }
 }
+/* Styling for the floating text effect */
+.moving-text {
+  display: inline-block;
+  font-size: 1.5rem; /* Slightly larger for better visibility */
+  font-weight: 600;
+  color: #333333; /* Dark color for light themes (change to #fff for dark themes) */
+  
+  /* Animation: name (float), duration (3s), smooth start/stop, repeats forever */
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Defining the float movement */
+@keyframes float {
+  0% { 
+    transform: translateY(0px); 
+  }
+  50% { 
+    transform: translateY(-15px); /* Moves the text 15 pixels up */
+  }
+  100% { 
+    transform: translateY(0px); /* Returns to original position */
+  }
+}
