@@ -64,3 +64,34 @@ li:hover {
     transform: scale(1.05);
     background: #e8f4fd;
 }
+/* Styling for the moving text */
+.moving-text {
+  display: inline-block;
+  font-family: 'Courier New', Courier, monospace; /* Looks like a typewriter */
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333; /* Dark color for light backgrounds */
+  
+  overflow: hidden; /* Keeps the text hidden until typed */
+  border-right: .15em solid orange; /* The typing cursor */
+  white-space: nowrap; /* Keeps everything on one line */
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+  
+  /* Animations: typing effect and blinking cursor */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The Typing Animation */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The Blinking Cursor Animation */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
