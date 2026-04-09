@@ -1,11 +1,65 @@
-<!-- New Portfolio Banner Section -->
-<section class="hero-section">
-    <div class="hero-content">
-        <h1>Hi, I'm <span class="highlight">[Your Name]</span></h1>
-        <p>I build <strong>creative and functional</strong> websites as a Developer.</p>
-        <div class="hero-buttons">
-            <button class="primary-btn">View My Projects</button>
-            <button class="secondary-btn">Contact Me</button>
-        </div>
-    </div>
-</section>
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Header */
+.header {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.header a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.header a:hover {
+  color: #00adb5;
+}
+
+/* Sections */
+.section {
+  background: #fff;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* About */
+.about {
+  text-align: center;
+}
+
+.about img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+/* Projects */
+.project {
+  background: #eee;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* Footer */
+.footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
