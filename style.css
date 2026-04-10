@@ -61,3 +61,167 @@ body {
   background: #333;
   color: #fff;
   text-align
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<style>
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5f7fa;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    margin-top: 10px;
+}
+
+/* NAVBAR */
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* SECTIONS */
+section {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #4facfe;
+}
+
+/* LIST */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* CONTACT */
+#contact p {
+    margin: 8px 0;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        margin: 10px;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>aditya jadhav </h1>
+    <p>Web Developer | Student | Designer</p>
+    <nav>
+        <a href="#profile">Profile</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="profile">
+    <h2>Profile</h2>
+    <p>Hello! I am a passionate web developer skilled in HTML, CSS, and JavaScript.</p>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    <ul>
+        <li>Bachelor's Degree - Your College</li>
+        <li>12th Grade - Your School</li>
+    </ul>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <ul>
+        <li>Portfolio Website</li>
+        <li>To-Do App</li>
+        <li>Blog Website</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Get in Touch</h2>
+    <p>Email: adityaajadhav001@email.com</p>
+    <p>Phone: +91-XXXXXXXXXX</p>
+</section>
+
+<footer>
+    <p>© 2026 aditya jadhav</p>
+</footer>
+
+</body>
+</html>
